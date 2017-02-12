@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E507A7301E4631E900B3F8AF /* ExpenseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */; };
+		E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */; };
+		E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */; };
+		E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */; };
+		E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */; };
+		E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */; };
+		E56332C81D0A351A00BE2BED /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C41D0A351A00BE2BED /* Trip.swift */; };
+		E5A630E41D0107BF00345E70 /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A630E11D0107BF00345E70 /* KAProgressLabel.m */; };
+		E5A630E51D0107BF00345E70 /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */; };
 		E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */; };
 		E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */; };
 		E5AFA5531CD2D5AC000100A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5511CD2D5AC000100A6 /* Main.storyboard */; };
 		E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA5541CD2D5AC000100A6 /* ProDiem.xcdatamodeld */; };
 		E5AFA5581CD2D5AC000100A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5571CD2D5AC000100A6 /* Assets.xcassets */; };
 		E5AFA55B1CD2D5AC000100A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5591CD2D5AC000100A6 /* LaunchScreen.storyboard */; };
+		E5AFA56A1CD2D9FF000100A6 /* TripsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5681CD2D9FF000100A6 /* TripsCollectionViewCell.xib */; };
+		E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */; };
+		E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */; };
+		E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */; };
+		E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */; };
+		E5B760221D0A367400FE8C4F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B760201D0A367400FE8C4F /* Expense.swift */; };
+		E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */; };
+		E5ECB3761CEE83DE006F72FA /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseCollectionViewCell.xib; sourceTree = "<group>"; };
+		E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseManager.swift; sourceTree = "<group>"; };
+		E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E56332C41D0A351A00BE2BED /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		E5A630DF1D0107BF00345E70 /* ProDiem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProDiem-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5A630E01D0107BF00345E70 /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = KAProgressLabel/KAProgressLabel.h; sourceTree = "<group>"; };
+		E5A630E11D0107BF00345E70 /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = KAProgressLabel/KAProgressLabel.m; sourceTree = "<group>"; };
+		E5A630E21D0107BF00345E70 /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = KAProgressLabel/TPPropertyAnimation.h; sourceTree = "<group>"; };
+		E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = KAProgressLabel/TPPropertyAnimation.m; sourceTree = "<group>"; };
 		E5AFA54A1CD2D5AC000100A6 /* ProDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +53,14 @@
 		E5AFA5571CD2D5AC000100A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AFA55A1CD2D5AC000100A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5AFA55C1CD2D5AC000100A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AFA5691CD2D9FF000100A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TripsCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTripViewController.swift; sourceTree = "<group>"; };
+		E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5B760201D0A367400FE8C4F /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
+		E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +74,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E563329D1D0A291C00BE2BED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E56332C01D0A351A00BE2BED /* CoreData Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */,
+				E5B760201D0A367400FE8C4F /* Expense.swift */,
+				E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */,
+				E56332C41D0A351A00BE2BED /* Trip.swift */,
+			);
+			path = "CoreData Models";
+			sourceTree = "<group>";
+		};
+		E5A630DE1D01078C00345E70 /* KAProgressLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E5A630E01D0107BF00345E70 /* KAProgressLabel.h */,
+				E5A630E11D0107BF00345E70 /* KAProgressLabel.m */,
+				E5A630E21D0107BF00345E70 /* TPPropertyAnimation.h */,
+				E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */,
+				E5A630DF1D0107BF00345E70 /* ProDiem-Bridging-Header.h */,
+			);
+			name = KAProgressLabel;
+			sourceTree = "<group>";
+		};
 		E5AFA5411CD2D5AC000100A6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +124,36 @@
 		E5AFA54C1CD2D5AC000100A6 /* ProDiem */ = {
 			isa = PBXGroup;
 			children = (
+				E56332C01D0A351A00BE2BED /* CoreData Models */,
+				E563329D1D0A291C00BE2BED /* Supporting Files */,
+				E5ECB3741CEE83DE006F72FA /* Resources */,
 				E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */,
+				E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */,
+				E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */,
+				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
 				E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */,
+				E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */,
+				E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */,
 				E5AFA5511CD2D5AC000100A6 /* Main.storyboard */,
+				E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */,
+				E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */,
+				E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */,
+				E5AFA5681CD2D9FF000100A6 /* TripsCollectionViewCell.xib */,
 				E5AFA5571CD2D5AC000100A6 /* Assets.xcassets */,
 				E5AFA5591CD2D5AC000100A6 /* LaunchScreen.storyboard */,
 				E5AFA55C1CD2D5AC000100A6 /* Info.plist */,
 				E5AFA5541CD2D5AC000100A6 /* ProDiem.xcdatamodeld */,
 			);
 			path = ProDiem;
+			sourceTree = "<group>";
+		};
+		E5ECB3741CEE83DE006F72FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5A630DE1D01078C00345E70 /* KAProgressLabel */,
+				E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,11 +183,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Henry ACN";
 				TargetAttributes = {
 					E5AFA5491CD2D5AC000100A6 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EXLCZJ96TK;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -126,8 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AFA55B1CD2D5AC000100A6 /* LaunchScreen.storyboard in Resources */,
+				E5AFA56A1CD2D9FF000100A6 /* TripsCollectionViewCell.xib in Resources */,
 				E5AFA5581CD2D5AC000100A6 /* Assets.xcassets in Resources */,
 				E5AFA5531CD2D5AC000100A6 /* Main.storyboard in Resources */,
+				E507A7301E4631E900B3F8AF /* ExpenseCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +231,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */,
+				E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */,
+				E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */,
+				E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */,
 				E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */,
+				E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */,
+				E5ECB3761CEE83DE006F72FA /* KDCircularProgress.swift in Sources */,
+				E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */,
+				E5A630E41D0107BF00345E70 /* KAProgressLabel.m in Sources */,
+				E5A630E51D0107BF00345E70 /* TPPropertyAnimation.m in Sources */,
 				E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */,
+				E5B760221D0A367400FE8C4F /* Expense.swift in Sources */,
+				E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */,
+				E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */,
+				E56332C81D0A351A00BE2BED /* Trip.swift in Sources */,
+				E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */,
+				E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +271,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E5AFA5681CD2D9FF000100A6 /* TripsCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5AFA5691CD2D9FF000100A6 /* Base */,
+			);
+			name = TripsCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -180,8 +296,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -208,6 +326,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -225,8 +344,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -245,6 +366,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -253,10 +376,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EXLCZJ96TK;
 				INFOPLIST_FILE = ProDiem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henry.acn.ProDiem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.ProDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProDiem/Resources/ProDiem-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,10 +395,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EXLCZJ96TK;
 				INFOPLIST_FILE = ProDiem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henry.acn.ProDiem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.ProDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProDiem/Resources/ProDiem-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -290,6 +428,7 @@
 				E5AFA5611CD2D5AC000100A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

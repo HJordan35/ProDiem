@@ -1,0 +1,120 @@
+//
+//  AddExpenseViewController.swift
+//  ProDiem
+//
+//  Created by Henry Jordan III on 6/9/16.
+//  Copyright © 2016 Henry ACN. All rights reserved.
+//
+
+import Foundation
+import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
+
+class AddExpenseViewController: UIViewController {
+    
+    @IBOutlet weak var expenseDateLabel: UITextField!
+    @IBOutlet weak var expenseAmountLabel: UITextField!
+    @IBOutlet weak var expenseNameLabel: UITextField!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var modalUIView: UIView!
+    
+    var currentTrip: Trip?
+    var expenseDate: Date?
+    
+    var newExpenseName: String?
+    var newExpenseAmount: Double?
+    var newExpenseDate: Date?
+    var newExpense: Expense?
+    
+    let expenseManager = ExpenseManager.sharedManager
+    
+    let dateFormatter = DateFormatter()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        
+        //Round the edges of the view
+        modalUIView.layer.borderColor = UIColor.appDarkGreen().cgColor
+        modalUIView.layer.borderWidth = 2
+        modalUIView.layer.cornerRadius = 10
+        
+        modalUIView.layer.shadowColor = UIColor.black.cgColor
+        modalUIView.layer.shadowOpacity = 1
+        modalUIView.layer.shadowOffset = CGSize.zero
+        modalUIView.layer.shadowRadius = 10
+        modalUIView.layer.shadowPath = UIBezierPath(rect: modalUIView.bounds).cgPath
+        
+        //Round edges of the buttons
+        addButton.layer.borderColor = UIColor.appDarkGreen().cgColor
+        addButton.layer.borderWidth = 1
+        addButton.layer.cornerRadius = 10
+        
+        cancelButton.layer.borderColor = UIColor.appDarkGreen().cgColor
+        cancelButton.layer.borderWidth = 1
+        cancelButton.layer.cornerRadius = 10
+
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender as! UIButton === addButton {
+            if let name = expenseNameLabel.text {
+                newExpenseName = name
+            }
+            if let amount = expenseAmountLabel.text {
+                newExpenseAmount = Double(amount)
+            }
+            if let date = expenseDate {
+                newExpenseDate = date
+            }
+            
+            if(newExpenseName != "") && (newExpenseAmount > 0) {
+                newExpense = expenseManager.createNewExpense(newExpenseName, amount: newExpenseAmount, date: newExpenseDate, trip: currentTrip)
+            }
+        }
+    }
+    
+    @IBAction func addDate(_ sender: UITextField) {
+        let datePickerView: UIDatePicker = UIDatePicker()
+        
+        expenseDate = Date()
+        expenseDateLabel.text = dateFormatter.string(from: expenseDate!)
+        
+        datePickerView.datePickerMode = UIDatePickerMode.date
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: #selector(self.handleDatePicker(_:)), for: UIControlEvents.valueChanged)
+    }
+    
+    func handleDatePicker(_ sender: UIDatePicker){
+        
+        expenseDate = sender.date
+        expenseDateLabel.text = dateFormatter.string(from: sender.date)
+    }
+}
