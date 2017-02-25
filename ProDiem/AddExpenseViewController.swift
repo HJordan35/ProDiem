@@ -33,22 +33,25 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 }
 
 
-class AddExpenseViewController: UIViewController {
+class AddExpenseViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var expenseDateLabel: UITextField!
     @IBOutlet weak var expenseAmountLabel: UITextField!
     @IBOutlet weak var expenseNameLabel: UITextField!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet var captureButton: UIView!
     @IBOutlet weak var modalUIView: UIView!
     
     var currentTrip: Trip?
     var expenseDate: Date?
+    var receiptImage: UIImage?
     
     var newExpenseName: String?
     var newExpenseAmount: Double?
     var newExpenseDate: Date?
     var newExpense: Expense?
+    var newReceipt: UIImage?
     
     let expenseManager = ExpenseManager.sharedManager
     
@@ -80,6 +83,9 @@ class AddExpenseViewController: UIViewController {
         cancelButton.layer.borderWidth = 1
         cancelButton.layer.cornerRadius = 10
 
+        captureButton.layer.borderColor = UIColor.appDarkGreen().cgColor
+        captureButton.layer.borderWidth = 1
+        captureButton.layer.cornerRadius = 10
         
     }
     
@@ -94,11 +100,31 @@ class AddExpenseViewController: UIViewController {
             if let date = expenseDate {
                 newExpenseDate = date
             }
+            if let receipt = receiptImage {
+                newReceipt = receipt
+            }
             
             if(newExpenseName != "") && (newExpenseAmount > 0) {
                 newExpense = expenseManager.createNewExpense(newExpenseName, amount: newExpenseAmount, date: newExpenseDate, trip: currentTrip)
             }
         }
+    }
+    
+    
+    @IBAction func openCamera(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        receiptImage = info[UIImagePickerControllerOriginalImage] as! UIImage?
+    
     }
     
     @IBAction func addDate(_ sender: UITextField) {
