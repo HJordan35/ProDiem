@@ -11,27 +11,45 @@ import CoreData
 
 class ExpenseManager {
     
+    let convertQueue = DispatchQueue(label: "com.prodiem.convertqueue")
+    let saveQueue = DispatchQueue(label: "com.prodiem.savequeue")
+
+    
     static let sharedManager: ExpenseManager = {
         let manager = ExpenseManager()
         return manager
     }()
 
 
-    func createNewExpense(_ name: String?, amount: Double?, date: Date?, trip: Trip?) -> Expense {
+    func createNewExpense(_ name: String, amount: Double, date: Date, trip: Trip, receipt: UIImage) -> Expense {
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
         
-        let entityDescription = NSEntityDescription.entity(forEntityName: "Expense", in: context)
-        let newExpense = Expense(entity: entityDescription!, insertInto: context)
+        let expenseDescription = NSEntityDescription.entity(forEntityName: "Expense", in: context)
+        let receiptDescription = NSEntityDescription.entity(forEntityName: "FullResReceipt", in: context)
+        
+        let newExpense = Expense(entity: expenseDescription!, insertInto: context)
+        let newReceipt = FullResReceipt(entity: receiptDescription!, insertInto: context)
+        
+        let imageData = UIImageJPEGRepresentation(receipt, 1) as NSData!
+        
+        newReceipt.imageData = imageData
         
         newExpense.name = name
         newExpense.amount = amount as NSNumber?
-        newExpense.date = date
+        newExpense.date = date as NSDate?
         newExpense.trip = trip
+        newExpense.receipt = newReceipt
         
         do {
-            try newExpense.managedObjectContext?.save()
-            print(newExpense)
+            try newReceipt.managedObjectContext?.save()
+            do {
+                try newExpense.managedObjectContext?.save()
+                print(newExpense)
+            } catch {
+                print(error)
+            }
         } catch {
             print(error)
         }

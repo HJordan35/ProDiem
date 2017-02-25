@@ -133,7 +133,7 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.expenseAmountLabel.text = currencyFormatter.string(from: amount)
         }
         if let date = currentExpense.date {
-            cell.expenseDateLabel.text = dateFormatter.string(from:date)
+            cell.expenseDateLabel.text = dateFormatter.string(from:date as Date)
         }
         cell.expenseNameLabel.text = currentExpense.name
 

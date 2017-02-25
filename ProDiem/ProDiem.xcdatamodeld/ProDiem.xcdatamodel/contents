@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 7.3" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Expense" representedClassName=".Expense" syncable="YES">
-        <attribute name="amount" optional="YES" attributeType="Double" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="receipt" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FullResReceipt" inverseName="expense" inverseEntity="FullResReceipt" syncable="YES"/>
         <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="expenses" inverseEntity="Trip" syncable="YES"/>
     </entity>
+    <entity name="FullResReceipt" representedClassName="FullResReceipt" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="expense" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Expense" inverseName="receipt" inverseEntity="Expense" syncable="YES"/>
+    </entity>
     <entity name="Trip" representedClassName=".Trip" syncable="YES">
-        <attribute name="alertThreshold" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="dailyPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="alertThreshold" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dailyPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="tripTotalPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="tripUsedPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tripTotalPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tripUsedPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Expense" inverseName="trip" inverseEntity="Expense" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Trip" positionX="-8199" positionY="-9693" width="128" height="165"/>
-        <element name="Expense" positionX="-8199" positionY="-9630" width="128" height="105"/>
+        <element name="Expense" positionX="-8181" positionY="-9693" width="128" height="118"/>
+        <element name="Trip" positionX="-8163" positionY="-9909" width="128" height="165"/>
+        <element name="FullResReceipt" positionX="-7868" positionY="-9651" width="128" height="73"/>
     </elements>
 </model>

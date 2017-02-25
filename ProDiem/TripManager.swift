@@ -13,6 +13,7 @@ class TripManager {
     
     static let sharedManager: TripManager = {
         let manager = TripManager()
+        
         return manager
     }()
     
@@ -23,11 +24,12 @@ class TripManager {
         let entityDescription = NSEntityDescription.entity(forEntityName: "Trip", in: context)
         let newTrip = Trip(entity: entityDescription!, insertInto: context)
         
+        
         newTrip.name = name
         newTrip.dailyPerDiem = dailyPerDiem as NSNumber?
         newTrip.tripTotalPerDiem = totalPerDiem as NSNumber?
-        newTrip.startDate = tripStart
-        newTrip.endDate = tripEnd
+        newTrip.startDate = tripStart as NSDate?
+        newTrip.endDate = tripEnd as NSDate?
         
         do {
             try newTrip.managedObjectContext?.save()
@@ -81,4 +83,5 @@ class TripManager {
         }
         
     }
+    
 }

@@ -52,6 +52,7 @@ class AddExpenseViewController: UIViewController, UIImagePickerControllerDelegat
     var newExpenseDate: Date?
     var newExpense: Expense?
     var newReceipt: UIImage?
+    var newReceiptThumb: UIImage?
     
     let expenseManager = ExpenseManager.sharedManager
     
@@ -93,19 +94,16 @@ class AddExpenseViewController: UIViewController, UIImagePickerControllerDelegat
         if sender as! UIButton === addButton {
             if let name = expenseNameLabel.text {
                 newExpenseName = name
-            }
-            if let amount = expenseAmountLabel.text {
-                newExpenseAmount = Double(amount)
-            }
-            if let date = expenseDate {
-                newExpenseDate = date
-            }
-            if let receipt = receiptImage {
-                newReceipt = receipt
-            }
-            
-            if(newExpenseName != "") && (newExpenseAmount > 0) {
-                newExpense = expenseManager.createNewExpense(newExpenseName, amount: newExpenseAmount, date: newExpenseDate, trip: currentTrip)
+                if let amount = expenseAmountLabel.text {
+                    newExpenseAmount = Double(amount)
+                    if let date = expenseDate {
+                        newExpenseDate = date
+                        if let receipt = receiptImage {
+                            newReceipt = receipt
+                            newExpense = expenseManager.createNewExpense(newExpenseName!, amount: newExpenseAmount!, date: newExpenseDate!, trip: currentTrip!, receipt: newReceipt!)
+                        }
+                    }
+                }
             }
         }
     }
@@ -124,7 +122,7 @@ class AddExpenseViewController: UIViewController, UIImagePickerControllerDelegat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         receiptImage = info[UIImagePickerControllerOriginalImage] as! UIImage?
-    
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addDate(_ sender: UITextField) {
