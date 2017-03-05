@@ -30,6 +30,7 @@
 		E5BC3E221E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1E1E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift */; };
 		E5BC3E231E62474E00DFBEEC /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1F1E62474E00DFBEEC /* Expense+CoreDataClass.swift */; };
 		E5BC3E241E62474E00DFBEEC /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E201E62474E00DFBEEC /* Expense+CoreDataProperties.swift */; };
+		E5BC3E281E63288600DFBEEC /* ViewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */; };
 		E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */; };
 		E5ECB3761CEE83DE006F72FA /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		E5BC3E1E1E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E5BC3E1F1E62474E00DFBEEC /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E5BC3E201E62474E00DFBEEC /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExpenseViewController.swift; sourceTree = "<group>"; };
 		E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
 		E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,9 +137,10 @@
 				E5ECB3741CEE83DE006F72FA /* Resources */,
 				E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */,
 				E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */,
-				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
 				E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */,
 				E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */,
+				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
+				E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */,
 				E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */,
 				E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */,
 				E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */,
@@ -242,6 +245,7 @@
 				E5BC3E221E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift in Sources */,
 				E5BC3E1B1E61EC3600DFBEEC /* Trip+CoreDataClass.swift in Sources */,
 				E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */,
+				E5BC3E281E63288600DFBEEC /* ViewExpenseViewController.swift in Sources */,
 				E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */,
 				E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */,
 				E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */,

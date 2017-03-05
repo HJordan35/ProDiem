@@ -140,11 +140,21 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedExpense: Expense = tripExpenses[indexPath.row]
+         self.performSegue(withIdentifier: "ShowSelectedExpense", sender: selectedExpense)
+    }
+    
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddNewExpenseSegue" {
             let addExpenseVC = segue.destination as! AddExpenseViewController
             addExpenseVC.currentTrip =  self.currentTrip
+        }
+        
+        if segue.identifier == "ShowSelectedExpense" {
+            let viewExpenseVC = segue.destination as! ViewExpenseViewController
+            viewExpenseVC.selectedExpense =  sender as! Expense
         }
     }
     
