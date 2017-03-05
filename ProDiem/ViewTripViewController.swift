@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KAProgressLabel
 
 class ViewTripViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -69,14 +70,16 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.tripRemainingProgress.roundedCornersWidth = 18; // Defaults to 0
         self.tripRemainingProgress.trackColor = UIColor.appOrangeColorFade()
         self.tripRemainingProgress.progressColor = UIColor.appOrangeColor()
-        self.tripRemainingProgress.endDegree = 360
+        self.tripRemainingProgress.endDegree = 0
+        self.tripRemainingProgress.startDegree = 0
         
         self.dayRemainingProgress.trackWidth = 18;         // Defaults to 5.0
         self.dayRemainingProgress.progressWidth = 18;        // Defaults to 5.0
         self.dayRemainingProgress.roundedCornersWidth = 18; // Defaults to 0
         self.dayRemainingProgress.trackColor = UIColor.appLimeGreenColorFade()
         self.dayRemainingProgress.progressColor = UIColor.appLimeGreenColor()
-        self.dayRemainingProgress.endDegree = 360
+        self.dayRemainingProgress.endDegree = 0
+        self.dayRemainingProgress.startDegree = 0
         
         
         if let trip = currentTrip {
@@ -230,7 +233,7 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
             percentOfTotalProgress = 1.0
         }
         
-        self.dayRemainingProgress.endDegree = CGFloat(percentOfTotalProgress)
+        self.dayRemainingProgress.setEndDegree(CGFloat(percentOfTotalProgress), timing:TPPropertyAnimationTimingEaseInEaseOut, duration: 1, delay: 0)
         self.dayRemainingLabel.text = String("$ ") + String(format: "%0.2f", remainingBalance)
         
     }
@@ -251,7 +254,8 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
             percentOfTotalProgress = 1.0
         }
         
-        self.tripRemainingProgress.endDegree = CGFloat(percentOfTotalProgress)
+       // self.tripRemainingProgress.endDegree = CGFloat(percentOfTotalProgress)
+        self.tripRemainingProgress.setEndDegree(CGFloat(percentOfTotalProgress), timing:TPPropertyAnimationTimingEaseInEaseOut, duration: 1, delay: 0)
         self.tripRemainingLabel.text = String("$ ") + String(format: "%0.2f", remainingBalance)
     }
     

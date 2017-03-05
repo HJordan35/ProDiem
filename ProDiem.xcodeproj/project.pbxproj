@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18334A3394477A32E543573F /* Pods_ProDiem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D6CDB9E09E640FFE88A9E7 /* Pods_ProDiem.framework */; };
 		E507A7301E4631E900B3F8AF /* ExpenseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */; };
 		E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */; };
 		E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */; };
 		E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */; };
 		E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */; };
-		E5A630E41D0107BF00345E70 /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A630E11D0107BF00345E70 /* KAProgressLabel.m */; };
-		E5A630E51D0107BF00345E70 /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */; };
+		E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */; };
+		E56332C81D0A351A00BE2BED /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C41D0A351A00BE2BED /* Trip.swift */; };
 		E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */; };
 		E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */; };
 		E5AFA5531CD2D5AC000100A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5511CD2D5AC000100A6 /* Main.storyboard */; };
@@ -24,28 +25,22 @@
 		E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */; };
 		E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */; };
 		E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */; };
-		E5BC3E1B1E61EC3600DFBEEC /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E191E61EC3600DFBEEC /* Trip+CoreDataClass.swift */; };
-		E5BC3E1C1E61EC3600DFBEEC /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1A1E61EC3600DFBEEC /* Trip+CoreDataProperties.swift */; };
-		E5BC3E211E62474E00DFBEEC /* FullResReceipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1D1E62474E00DFBEEC /* FullResReceipt+CoreDataClass.swift */; };
-		E5BC3E221E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1E1E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift */; };
-		E5BC3E231E62474E00DFBEEC /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E1F1E62474E00DFBEEC /* Expense+CoreDataClass.swift */; };
-		E5BC3E241E62474E00DFBEEC /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E201E62474E00DFBEEC /* Expense+CoreDataProperties.swift */; };
-		E5BC3E281E63288600DFBEEC /* ViewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */; };
+		E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */; };
+		E5B760221D0A367400FE8C4F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B760201D0A367400FE8C4F /* Expense.swift */; };
 		E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */; };
-		E5ECB3761CEE83DE006F72FA /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10D6CDB9E09E640FFE88A9E7 /* Pods_ProDiem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProDiem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6685BAD390A1C764384862F5 /* Pods-ProDiem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProDiem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProDiem/Pods-ProDiem.release.xcconfig"; sourceTree = "<group>"; };
+		A5CA162ACF68C5CA24BD0304 /* Pods-ProDiem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProDiem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProDiem/Pods-ProDiem.debug.xcconfig"; sourceTree = "<group>"; };
 		E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseCollectionViewCell.xib; sourceTree = "<group>"; };
 		E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseManager.swift; sourceTree = "<group>"; };
-		E5A630DF1D0107BF00345E70 /* ProDiem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProDiem-Bridging-Header.h"; sourceTree = "<group>"; };
-		E5A630E01D0107BF00345E70 /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = KAProgressLabel/KAProgressLabel.h; sourceTree = "<group>"; };
-		E5A630E11D0107BF00345E70 /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = KAProgressLabel/KAProgressLabel.m; sourceTree = "<group>"; };
-		E5A630E21D0107BF00345E70 /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = KAProgressLabel/TPPropertyAnimation.h; sourceTree = "<group>"; };
-		E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = KAProgressLabel/TPPropertyAnimation.m; sourceTree = "<group>"; };
+		E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E56332C41D0A351A00BE2BED /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		E5AFA54A1CD2D5AC000100A6 /* ProDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,15 +53,9 @@
 		E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTripViewController.swift; sourceTree = "<group>"; };
-		E5BC3E191E61EC3600DFBEEC /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E5BC3E1A1E61EC3600DFBEEC /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E5BC3E1D1E62474E00DFBEEC /* FullResReceipt+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E5BC3E1E1E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E5BC3E1F1E62474E00DFBEEC /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E5BC3E201E62474E00DFBEEC /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExpenseViewController.swift; sourceTree = "<group>"; };
+		E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5B760201D0A367400FE8C4F /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
-		E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18334A3394477A32E543573F /* Pods_ProDiem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782EFDE226ED2453CD13663F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5CA162ACF68C5CA24BD0304 /* Pods-ProDiem.debug.xcconfig */,
+				6685BAD390A1C764384862F5 /* Pods-ProDiem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C8F775604CCE70D46675A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D6CDB9E09E640FFE88A9E7 /* Pods_ProDiem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E563329D1D0A291C00BE2BED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,26 +98,12 @@
 		E56332C01D0A351A00BE2BED /* CoreData Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5BC3E1D1E62474E00DFBEEC /* FullResReceipt+CoreDataClass.swift */,
-				E5BC3E1E1E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift */,
-				E5BC3E1F1E62474E00DFBEEC /* Expense+CoreDataClass.swift */,
-				E5BC3E201E62474E00DFBEEC /* Expense+CoreDataProperties.swift */,
-				E5BC3E191E61EC3600DFBEEC /* Trip+CoreDataClass.swift */,
-				E5BC3E1A1E61EC3600DFBEEC /* Trip+CoreDataProperties.swift */,
+				E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */,
+				E5B760201D0A367400FE8C4F /* Expense.swift */,
+				E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */,
+				E56332C41D0A351A00BE2BED /* Trip.swift */,
 			);
 			path = "CoreData Models";
-			sourceTree = "<group>";
-		};
-		E5A630DE1D01078C00345E70 /* KAProgressLabel */ = {
-			isa = PBXGroup;
-			children = (
-				E5A630E01D0107BF00345E70 /* KAProgressLabel.h */,
-				E5A630E11D0107BF00345E70 /* KAProgressLabel.m */,
-				E5A630E21D0107BF00345E70 /* TPPropertyAnimation.h */,
-				E5A630E31D0107BF00345E70 /* TPPropertyAnimation.m */,
-				E5A630DF1D0107BF00345E70 /* ProDiem-Bridging-Header.h */,
-			);
-			name = KAProgressLabel;
 			sourceTree = "<group>";
 		};
 		E5AFA5411CD2D5AC000100A6 = {
@@ -118,6 +111,8 @@
 			children = (
 				E5AFA54C1CD2D5AC000100A6 /* ProDiem */,
 				E5AFA54B1CD2D5AC000100A6 /* Products */,
+				782EFDE226ED2453CD13663F /* Pods */,
+				8C8F775604CCE70D46675A4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,10 +132,9 @@
 				E5ECB3741CEE83DE006F72FA /* Resources */,
 				E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */,
 				E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */,
+				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
 				E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */,
 				E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */,
-				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
-				E5BC3E271E63288600DFBEEC /* ViewExpenseViewController.swift */,
 				E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */,
 				E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */,
 				E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */,
@@ -159,8 +153,6 @@
 		E5ECB3741CEE83DE006F72FA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E5A630DE1D01078C00345E70 /* KAProgressLabel */,
-				E5ECB3751CEE83DE006F72FA /* KDCircularProgress.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -172,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5AFA55F1CD2D5AC000100A6 /* Build configuration list for PBXNativeTarget "ProDiem" */;
 			buildPhases = (
+				76720BFD9B31FE7B3A959A78 /* [CP] Check Pods Manifest.lock */,
 				E5AFA5461CD2D5AC000100A6 /* Sources */,
 				E5AFA5471CD2D5AC000100A6 /* Frameworks */,
 				E5AFA5481CD2D5AC000100A6 /* Resources */,
+				0438C44AC6AB72D5183FE299 /* [CP] Embed Pods Frameworks */,
+				3CEF3A45F98D7C7BF8F52B9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,31 +230,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0438C44AC6AB72D5183FE299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProDiem/Pods-ProDiem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CEF3A45F98D7C7BF8F52B9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProDiem/Pods-ProDiem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76720BFD9B31FE7B3A959A78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5AFA5461CD2D5AC000100A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5BC3E1C1E61EC3600DFBEEC /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */,
-				E5BC3E221E62474E00DFBEEC /* FullResReceipt+CoreDataProperties.swift in Sources */,
-				E5BC3E1B1E61EC3600DFBEEC /* Trip+CoreDataClass.swift in Sources */,
+				E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */,
-				E5BC3E281E63288600DFBEEC /* ViewExpenseViewController.swift in Sources */,
 				E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */,
 				E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */,
 				E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */,
 				E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */,
-				E5ECB3761CEE83DE006F72FA /* KDCircularProgress.swift in Sources */,
 				E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */,
-				E5BC3E231E62474E00DFBEEC /* Expense+CoreDataClass.swift in Sources */,
-				E5A630E41D0107BF00345E70 /* KAProgressLabel.m in Sources */,
-				E5A630E51D0107BF00345E70 /* TPPropertyAnimation.m in Sources */,
 				E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */,
+				E5B760221D0A367400FE8C4F /* Expense.swift in Sources */,
+				E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */,
 				E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */,
-				E5BC3E241E62474E00DFBEEC /* Expense+CoreDataProperties.swift in Sources */,
+				E56332C81D0A351A00BE2BED /* Trip.swift in Sources */,
 				E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */,
-				E5BC3E211E62474E00DFBEEC /* FullResReceipt+CoreDataClass.swift in Sources */,
 				E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +423,7 @@
 		};
 		E5AFA5601CD2D5AC000100A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5CA162ACF68C5CA24BD0304 /* Pods-ProDiem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -397,7 +435,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.henry.ProDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ProDiem/Resources/ProDiem-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -405,6 +442,7 @@
 		};
 		E5AFA5611CD2D5AC000100A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6685BAD390A1C764384862F5 /* Pods-ProDiem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -416,7 +454,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.henry.ProDiem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ProDiem/Resources/ProDiem-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
