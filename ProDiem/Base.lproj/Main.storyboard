@@ -513,7 +513,7 @@
                                                 <rect key="frame" x="5.5" y="0.0" width="364" height="87"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="364" height="87"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="87"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
                                                 <connections>
@@ -720,12 +720,12 @@
         <!--View Expense View Controller-->
         <scene sceneID="xGh-cy-LJ4">
             <objects>
-                <viewController id="uBb-RV-bbR" customClass="ViewExpenseViewController" customModule="ProDiem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="uBb-RV-bbR" customClass="ViewExpenseViewController" customModule="ProDiem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XmT-If-BL8"/>
                         <viewControllerLayoutGuide type="bottom" id="wZS-Ku-tVQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ba8-UU-CnK">
+                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ba8-UU-CnK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -761,9 +761,10 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="modalUIView" destination="CfT-VK-bSh" id="VtU-7R-8gZ"/>
                         <outlet property="receiptImageView" destination="uDX-s4-3Oj" id="lzj-lo-Ga2"/>
                     </connections>
                 </viewController>

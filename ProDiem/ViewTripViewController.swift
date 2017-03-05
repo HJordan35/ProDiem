@@ -157,7 +157,7 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         if segue.identifier == "ShowSelectedExpense" {
             let viewExpenseVC = segue.destination as! ViewExpenseViewController
-            viewExpenseVC.selectedExpense =  sender as! Expense
+            viewExpenseVC.selectedExpense =  sender as? Expense
         }
     }
     
