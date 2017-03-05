@@ -1,0 +1,15 @@
+PODS:
+  - KAProgressLabel (3.3.1)
+  - KDCircularProgress (1.5.2)
+
+DEPENDENCIES:
+  - KAProgressLabel
+  - KDCircularProgress
+
+SPEC CHECKSUMS:
+  KAProgressLabel: b650c9dba6857e839772950bd7b6462161529e02
+  KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
+
+PODFILE CHECKSUM: f3aa90c7aa4a10355e7ece7a563eeec7f7b08a9c
+
+COCOAPODS: 1.2.0
