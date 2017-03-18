@@ -2,7 +2,7 @@
 //  Trip+CoreDataProperties.swift
 //  ProDiem
 //
-//  Created by Henry Jordan III on 2/25/17.
+//  Created by Henry Jordan III on 3/13/17.
 //  Copyright © 2017 Henry ACN. All rights reserved.
 //
 
@@ -23,6 +23,7 @@ extension Trip {
     @NSManaged public var startDate: NSDate?
     @NSManaged public var tripTotalPerDiem: NSNumber?
     @NSManaged public var tripUsedPerDiem: NSNumber?
+    @NSManaged public var tripType: String?
     @NSManaged public var expenses: NSSet?
 
 }

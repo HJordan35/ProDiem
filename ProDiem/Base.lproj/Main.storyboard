@@ -185,6 +185,9 @@
                                 <rect key="frame" x="15" y="93" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addTripType:" destination="1dy-y4-y3U" eventType="editingDidBegin" id="SEp-c5-qyw"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Trip Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-Ne-ckN">
                                 <rect key="frame" x="16" y="133" width="159.5" height="21"/>
@@ -332,6 +335,7 @@
                         <outlet property="tripNameTextField" destination="eiR-kX-tDU" id="0Sg-pa-opn"/>
                         <outlet property="tripStartDate" destination="otb-hb-gUS" id="gh4-rW-kFm"/>
                         <outlet property="tripTotalPerDiemTextFIeld" destination="tQJ-LY-3xh" id="LS3-Zh-ztJ"/>
+                        <outlet property="tripTypeLabel" destination="LVS-71-mri" id="Ilr-Ee-ibE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7w-ih-s8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -513,7 +517,7 @@
                                                 <rect key="frame" x="5.5" y="0.0" width="364" height="87"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="87"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="364" height="87"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
                                                 <connections>
@@ -577,9 +581,11 @@
                         <outlet property="dayRemainingLabel" destination="v7P-aw-0Zz" id="lki-tH-npm"/>
                         <outlet property="dayRemainingProgress" destination="53n-Jp-Gs1" id="Bfc-mM-sf0"/>
                         <outlet property="totalExpensesLabel" destination="pyV-ce-jl1" id="bxk-7L-gRq"/>
+                        <outlet property="tripDateRangeLabel" destination="HpE-J0-7Ic" id="ijC-yD-4bB"/>
                         <outlet property="tripExpenseCollectionView" destination="yvf-zT-ShE" id="WuC-86-ooe"/>
                         <outlet property="tripExpensesView" destination="U7s-h2-pJx" id="GAi-54-LnJ"/>
                         <outlet property="tripHeaderUIView" destination="MhA-EU-hTI" id="yYW-Ig-7A7"/>
+                        <outlet property="tripNameLabel" destination="n8c-vl-81h" id="NlN-JE-SGE"/>
                         <outlet property="tripRemainingLabel" destination="gGB-ef-WyF" id="elC-V0-4hw"/>
                         <outlet property="tripRemainingProgress" destination="VyG-az-Tri" id="1Am-cf-8u9"/>
                     </connections>

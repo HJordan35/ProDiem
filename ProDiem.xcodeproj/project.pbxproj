@@ -14,11 +14,11 @@
 		E53A2B941E6CBEA00004D576 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */; };
 		E53A2B951E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */; };
 		E53A2B961E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */; };
-		E53A2B971E6CBEA00004D576 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B911E6CBEA00004D576 /* Trip+CoreDataClass.swift */; };
-		E53A2B981E6CBEA00004D576 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B921E6CBEA00004D576 /* Trip+CoreDataProperties.swift */; };
 		E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */; };
 		E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */; };
 		E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */; };
+		E57167C51E76D06700D8D1AC /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */; };
+		E57167C61E76D06700D8D1AC /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */; };
 		E5A8CBF61E6CBEFC00513F2E /* ViewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8CBF51E6CBEFC00513F2E /* ViewExpenseViewController.swift */; };
 		E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */; };
 		E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */; };
@@ -43,11 +43,11 @@
 		E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E53A2B911E6CBEA00004D576 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E53A2B921E6CBEA00004D576 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseManager.swift; sourceTree = "<group>"; };
+		E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E5A8CBF51E6CBEFC00513F2E /* ViewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExpenseViewController.swift; sourceTree = "<group>"; };
 		E5AFA54A1CD2D5AC000100A6 /* ProDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,12 +104,12 @@
 		E56332C01D0A351A00BE2BED /* CoreData Models */ = {
 			isa = PBXGroup;
 			children = (
+				E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */,
+				E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */,
 				E53A2B8D1E6CBEA00004D576 /* Expense+CoreDataClass.swift */,
 				E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */,
 				E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */,
 				E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */,
-				E53A2B911E6CBEA00004D576 /* Trip+CoreDataClass.swift */,
-				E53A2B921E6CBEA00004D576 /* Trip+CoreDataProperties.swift */,
 			);
 			path = "CoreData Models";
 			sourceTree = "<group>";
@@ -292,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57167C61E76D06700D8D1AC /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */,
 				E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */,
 				E5A8CBF61E6CBEFC00513F2E /* ViewExpenseViewController.swift in Sources */,
@@ -299,7 +300,7 @@
 				E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */,
 				E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */,
 				E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */,
-				E53A2B971E6CBEA00004D576 /* Trip+CoreDataClass.swift in Sources */,
+				E57167C51E76D06700D8D1AC /* Trip+CoreDataClass.swift in Sources */,
 				E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */,
 				E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */,
 				E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */,
@@ -308,7 +309,6 @@
 				E53A2B931E6CBEA00004D576 /* Expense+CoreDataClass.swift in Sources */,
 				E53A2B941E6CBEA00004D576 /* Expense+CoreDataProperties.swift in Sources */,
 				E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */,
-				E53A2B981E6CBEA00004D576 /* Trip+CoreDataProperties.swift in Sources */,
 				E53A2B961E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

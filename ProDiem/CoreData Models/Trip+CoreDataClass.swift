@@ -2,7 +2,7 @@
 //  Trip+CoreDataClass.swift
 //  ProDiem
 //
-//  Created by Henry Jordan III on 2/25/17.
+//  Created by Henry Jordan III on 3/13/17.
 //  Copyright © 2017 Henry ACN. All rights reserved.
 //
 

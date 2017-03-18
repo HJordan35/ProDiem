@@ -18,12 +18,13 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="tripTotalPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tripType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tripUsedPerDiem" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Expense" inverseName="trip" inverseEntity="Expense" syncable="YES"/>
     </entity>
     <elements>
         <element name="Expense" positionX="-8181" positionY="-9693" width="128" height="118"/>
-        <element name="Trip" positionX="-8163" positionY="-9909" width="128" height="165"/>
         <element name="FullResReceipt" positionX="-7868" positionY="-9651" width="128" height="73"/>
+        <element name="Trip" positionX="-8163" positionY="-9909" width="128" height="180"/>
     </elements>
 </model>
