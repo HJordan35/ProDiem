@@ -2,25 +2,45 @@
 //  Trip+CoreDataProperties.swift
 //  ProDiem
 //
-//  Created by Henry Jordan III on 6/9/16.
-//  Copyright © 2016 Henry ACN. All rights reserved.
-//
-//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
-//  to delete and recreate this implementation file for your updated model.
+//  Created by Henry Jordan III on 3/13/17.
+//  Copyright © 2017 Henry ACN. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
+
 extension Trip {
 
-    @NSManaged var alertThreshold: NSNumber?
-    @NSManaged var dailyPerDiem: NSNumber?
-    @NSManaged var endDate: Date?
-    @NSManaged var name: String?
-    @NSManaged var startDate: Date?
-    @NSManaged var tripTotalPerDiem: NSNumber?
-    @NSManaged var tripUsedPerDiem: NSNumber?
-    @NSManaged var expenses: NSSet?
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Trip> {
+        return NSFetchRequest<Trip>(entityName: "Trip");
+    }
+
+    @NSManaged public var alertThreshold: NSNumber?
+    @NSManaged public var dailyPerDiem: NSNumber?
+    @NSManaged public var endDate: NSDate?
+    @NSManaged public var name: String?
+    @NSManaged public var startDate: NSDate?
+    @NSManaged public var tripTotalPerDiem: NSNumber?
+    @NSManaged public var tripUsedPerDiem: NSNumber?
+    @NSManaged public var tripType: String?
+    @NSManaged public var expenses: NSSet?
+
+}
+
+// MARK: Generated accessors for expenses
+extension Trip {
+
+    @objc(addExpensesObject:)
+    @NSManaged public func addToExpenses(_ value: Expense)
+
+    @objc(removeExpensesObject:)
+    @NSManaged public func removeFromExpenses(_ value: Expense)
+
+    @objc(addExpenses:)
+    @NSManaged public func addToExpenses(_ values: NSSet)
+
+    @objc(removeExpenses:)
+    @NSManaged public func removeFromExpenses(_ values: NSSet)
 
 }

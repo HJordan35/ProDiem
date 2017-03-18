@@ -22,6 +22,8 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var tripRemainingProgress: KAProgressLabel!
     @IBOutlet weak var dayRemainingProgress: KAProgressLabel!
     @IBOutlet weak var tripExpensesView: UIView!
+    @IBOutlet weak var tripNameLabel: UILabel!
+    @IBOutlet weak var tripDateRangeLabel: UILabel!
     
     //Expense Variables
     var currentTrip: Trip!
@@ -51,6 +53,8 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         currencyFormatter.numberStyle = .currency
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
+        
+        
         
         //Set edges of the header view
         tripHeaderUIView.layer.borderWidth = 0.5
@@ -84,7 +88,14 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         if let trip = currentTrip {
             let remainingBalanceValue = Double(trip.tripTotalPerDiem!) - Double(trip.tripUsedPerDiem!)
+            let tripStartDateString = dateFormatter.string(from: trip.startDate as! Date)
+            let tripEndDateString = dateFormatter.string(from:trip.endDate as! Date)
+            let concatDate = tripStartDateString + " - " + tripEndDateString
+            
             tripRemainingLabel.text = String("$ ") + String(format: "%0.2f", remainingBalanceValue)
+            tripNameLabel.text = trip.name
+            tripDateRangeLabel.text = concatDate
+            
             
             tripExpenses.removeAll()
             tripExpenses = expenseManager.fetchAllTripExpenses(trip)
@@ -136,11 +147,16 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
             cell.expenseAmountLabel.text = currencyFormatter.string(from: amount)
         }
         if let date = currentExpense.date {
-            cell.expenseDateLabel.text = dateFormatter.string(from:date)
+            cell.expenseDateLabel.text = dateFormatter.string(from:date as Date)
         }
         cell.expenseNameLabel.text = currentExpense.name
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedExpense: Expense = tripExpenses[indexPath.row]
+         self.performSegue(withIdentifier: "ShowSelectedExpense", sender: selectedExpense)
     }
     
 
@@ -148,6 +164,11 @@ class ViewTripViewController: UIViewController, UICollectionViewDelegate, UIColl
         if segue.identifier == "AddNewExpenseSegue" {
             let addExpenseVC = segue.destination as! AddExpenseViewController
             addExpenseVC.currentTrip =  self.currentTrip
+        }
+        
+        if segue.identifier == "ShowSelectedExpense" {
+            let viewExpenseVC = segue.destination as! ViewExpenseViewController
+            viewExpenseVC.selectedExpense =  sender as? Expense
         }
     }
     

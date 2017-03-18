@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddTripViewController: UIViewController {
+class AddTripViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var tripNameTextField: UITextField!
     @IBOutlet weak var dayPerDiemTextField: UITextField!
@@ -16,14 +16,18 @@ class AddTripViewController: UIViewController {
     @IBOutlet weak var tripEndDate: UITextField!
     @IBOutlet weak var tripStartDate: UITextField!
 
+    @IBOutlet weak var tripTypeLabel: UITextField!
     @IBOutlet weak var saveButton: UIButton!
    
     var trip: Trip?
     var startDate: Date?
     var endDate: Date?
     var totalPerDiem: Double?
+    var tripType: String?
     var dayPerDiem = 0.0
     let tripManager = TripManager.sharedManager
+    
+    let tripTypePicker: UIPickerView = UIPickerView()
     
     let dateFormatter = DateFormatter()
     let currencyFormatter = NumberFormatter()
@@ -36,6 +40,9 @@ class AddTripViewController: UIViewController {
         currencyFormatter.numberStyle = .currency
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
+        
+        tripTypePicker.delegate = self
+        tripTypePicker.dataSource = self
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.backTapped))
         view.addGestureRecognizer(tap)
@@ -65,6 +72,10 @@ class AddTripViewController: UIViewController {
     @IBAction func cancelButtonPressed() {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
+    @IBAction func addTripType(_ sender: UITextField) {
+        sender.inputView = self.tripTypePicker
+
+    }
     
     @IBAction func addDate(_ sender: UITextField) {
         let datePickerView: UIDatePicker = UIDatePicker()
@@ -84,6 +95,8 @@ class AddTripViewController: UIViewController {
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(self.handleDatePicker(_:)), for: UIControlEvents.valueChanged)
     }
+    
+    
     
     @IBAction func calculateTotalPerDiem() {
         let input = Double(dayPerDiemTextField.text!)
@@ -115,6 +128,36 @@ class AddTripViewController: UIViewController {
         
         self.calculateTotalPerDiem()
     }
+    
+    func handleTypePicker(_ sender: UIPickerView) {
+        if self.tripTypePicker.selectedRow(inComponent: 0) == 0 {
+            tripTypeLabel.text = "Business"
+            tripType = "Business"
+        }
+        else {
+            tripTypeLabel.text = "Personal"
+            tripType = "Personal"
+        }
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        var value: String?
+        
+        switch row {
+        case 0:
+            value = "Business"
+        default:
+            value = "Personal"
+        }
+        return value
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 2
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
     
     
 }

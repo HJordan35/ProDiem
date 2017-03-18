@@ -10,11 +10,16 @@
 		18334A3394477A32E543573F /* Pods_ProDiem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D6CDB9E09E640FFE88A9E7 /* Pods_ProDiem.framework */; };
 		E507A7301E4631E900B3F8AF /* ExpenseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */; };
 		E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */; };
+		E53A2B931E6CBEA00004D576 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B8D1E6CBEA00004D576 /* Expense+CoreDataClass.swift */; };
+		E53A2B941E6CBEA00004D576 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */; };
+		E53A2B951E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */; };
+		E53A2B961E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */; };
 		E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */; };
 		E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */; };
 		E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */; };
-		E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */; };
-		E56332C81D0A351A00BE2BED /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56332C41D0A351A00BE2BED /* Trip.swift */; };
+		E57167C51E76D06700D8D1AC /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */; };
+		E57167C61E76D06700D8D1AC /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */; };
+		E5A8CBF61E6CBEFC00513F2E /* ViewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8CBF51E6CBEFC00513F2E /* ViewExpenseViewController.swift */; };
 		E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */; };
 		E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */; };
 		E5AFA5531CD2D5AC000100A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AFA5511CD2D5AC000100A6 /* Main.storyboard */; };
@@ -25,8 +30,6 @@
 		E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */; };
 		E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */; };
 		E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */; };
-		E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */; };
-		E5B760221D0A367400FE8C4F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B760201D0A367400FE8C4F /* Expense.swift */; };
 		E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,11 +39,16 @@
 		A5CA162ACF68C5CA24BD0304 /* Pods-ProDiem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProDiem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProDiem/Pods-ProDiem.debug.xcconfig"; sourceTree = "<group>"; };
 		E507A72F1E4631E900B3F8AF /* ExpenseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseCollectionViewCell.xib; sourceTree = "<group>"; };
 		E507A7311E46365000B3F8AF /* ExpenseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E53A2B8D1E6CBEA00004D576 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FullResReceipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E563329E1D0A291C00BE2BED /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		E56332A61D0A32AA00BE2BED /* ExpenseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseManager.swift; sourceTree = "<group>"; };
-		E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E56332C41D0A351A00BE2BED /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5A8CBF51E6CBEFC00513F2E /* ViewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExpenseViewController.swift; sourceTree = "<group>"; };
 		E5AFA54A1CD2D5AC000100A6 /* ProDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +61,6 @@
 		E5AFA56B1CD2DA8D000100A6 /* TripsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTripViewController.swift; sourceTree = "<group>"; };
-		E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E5B760201D0A367400FE8C4F /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,10 +104,12 @@
 		E56332C01D0A351A00BE2BED /* CoreData Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5B7601F1D0A367400FE8C4F /* Expense+CoreDataProperties.swift */,
-				E5B760201D0A367400FE8C4F /* Expense.swift */,
-				E56332C31D0A351A00BE2BED /* Trip+CoreDataProperties.swift */,
-				E56332C41D0A351A00BE2BED /* Trip.swift */,
+				E57167C31E76D06700D8D1AC /* Trip+CoreDataClass.swift */,
+				E57167C41E76D06700D8D1AC /* Trip+CoreDataProperties.swift */,
+				E53A2B8D1E6CBEA00004D576 /* Expense+CoreDataClass.swift */,
+				E53A2B8E1E6CBEA00004D576 /* Expense+CoreDataProperties.swift */,
+				E53A2B8F1E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift */,
+				E53A2B901E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift */,
 			);
 			path = "CoreData Models";
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 				E5AFA54D1CD2D5AC000100A6 /* AppDelegate.swift */,
 				E5AFA54F1CD2D5AC000100A6 /* ViewController.swift */,
 				E5AFA5711CD2DFE1000100A6 /* ViewTripViewController.swift */,
+				E5A8CBF51E6CBEFC00513F2E /* ViewExpenseViewController.swift */,
 				E5AFA56F1CD2DFCF000100A6 /* AddTripViewController.swift */,
 				E56332A01D0A2C3800BE2BED /* AddExpenseViewController.swift */,
 				E5ECB34F1CE9F5DE006F72FA /* TripManager.swift */,
@@ -283,21 +292,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57167C61E76D06700D8D1AC /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5701CD2DFCF000100A6 /* AddTripViewController.swift in Sources */,
-				E56332C71D0A351A00BE2BED /* Trip+CoreDataProperties.swift in Sources */,
 				E5AFA5501CD2D5AC000100A6 /* ViewController.swift in Sources */,
+				E5A8CBF61E6CBEFC00513F2E /* ViewExpenseViewController.swift in Sources */,
 				E5AFA56C1CD2DA8D000100A6 /* TripsCollectionViewCell.swift in Sources */,
 				E563329F1D0A291C00BE2BED /* UIColor+AppColors.swift in Sources */,
 				E5AFA5561CD2D5AC000100A6 /* ProDiem.xcdatamodeld in Sources */,
 				E56332A71D0A32AA00BE2BED /* ExpenseManager.swift in Sources */,
+				E57167C51E76D06700D8D1AC /* Trip+CoreDataClass.swift in Sources */,
 				E5AFA5721CD2DFE1000100A6 /* ViewTripViewController.swift in Sources */,
 				E5AFA54E1CD2D5AC000100A6 /* AppDelegate.swift in Sources */,
-				E5B760221D0A367400FE8C4F /* Expense.swift in Sources */,
-				E5B760211D0A367400FE8C4F /* Expense+CoreDataProperties.swift in Sources */,
 				E5ECB3501CE9F5DE006F72FA /* TripManager.swift in Sources */,
-				E56332C81D0A351A00BE2BED /* Trip.swift in Sources */,
 				E507A7321E46365000B3F8AF /* ExpenseCollectionViewCell.swift in Sources */,
+				E53A2B951E6CBEA00004D576 /* FullResReceipt+CoreDataClass.swift in Sources */,
+				E53A2B931E6CBEA00004D576 /* Expense+CoreDataClass.swift in Sources */,
+				E53A2B941E6CBEA00004D576 /* Expense+CoreDataProperties.swift in Sources */,
 				E56332A11D0A2C3800BE2BED /* AddExpenseViewController.swift in Sources */,
+				E53A2B961E6CBEA00004D576 /* FullResReceipt+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

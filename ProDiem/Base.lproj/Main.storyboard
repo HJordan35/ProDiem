@@ -185,6 +185,9 @@
                                 <rect key="frame" x="15" y="93" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addTripType:" destination="1dy-y4-y3U" eventType="editingDidBegin" id="SEp-c5-qyw"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Trip Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-Ne-ckN">
                                 <rect key="frame" x="16" y="133" width="159.5" height="21"/>
@@ -332,6 +335,7 @@
                         <outlet property="tripNameTextField" destination="eiR-kX-tDU" id="0Sg-pa-opn"/>
                         <outlet property="tripStartDate" destination="otb-hb-gUS" id="gh4-rW-kFm"/>
                         <outlet property="tripTotalPerDiemTextFIeld" destination="tQJ-LY-3xh" id="LS3-Zh-ztJ"/>
+                        <outlet property="tripTypeLabel" destination="LVS-71-mri" id="Ilr-Ee-ibE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7w-ih-s8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,6 +520,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="364" height="87"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
+                                                <connections>
+                                                    <segue destination="uBb-RV-bbR" kind="presentation" identifier="ShowSelectedExpense" id="ncl-fL-zJf"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -574,9 +581,11 @@
                         <outlet property="dayRemainingLabel" destination="v7P-aw-0Zz" id="lki-tH-npm"/>
                         <outlet property="dayRemainingProgress" destination="53n-Jp-Gs1" id="Bfc-mM-sf0"/>
                         <outlet property="totalExpensesLabel" destination="pyV-ce-jl1" id="bxk-7L-gRq"/>
+                        <outlet property="tripDateRangeLabel" destination="HpE-J0-7Ic" id="ijC-yD-4bB"/>
                         <outlet property="tripExpenseCollectionView" destination="yvf-zT-ShE" id="WuC-86-ooe"/>
                         <outlet property="tripExpensesView" destination="U7s-h2-pJx" id="GAi-54-LnJ"/>
                         <outlet property="tripHeaderUIView" destination="MhA-EU-hTI" id="yYW-Ig-7A7"/>
+                        <outlet property="tripNameLabel" destination="n8c-vl-81h" id="NlN-JE-SGE"/>
                         <outlet property="tripRemainingLabel" destination="gGB-ef-WyF" id="elC-V0-4hw"/>
                         <outlet property="tripRemainingProgress" destination="VyG-az-Tri" id="1Am-cf-8u9"/>
                     </connections>
@@ -714,6 +723,62 @@
             </objects>
             <point key="canvasLocation" x="3597.5999999999999" y="517.6911544227886"/>
         </scene>
+        <!--View Expense View Controller-->
+        <scene sceneID="xGh-cy-LJ4">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="uBb-RV-bbR" customClass="ViewExpenseViewController" customModule="ProDiem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XmT-If-BL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="wZS-Ku-tVQ"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ba8-UU-CnK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-VK-bSh">
+                                <rect key="frame" x="37" y="149" width="301" height="368"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Expense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umg-vS-fbT">
+                                        <rect key="frame" x="19" y="11" width="263" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.13832947609999999" green="0.2337904274" blue="0.32578486200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYM-ez-UGg">
+                                        <rect key="frame" x="19" y="40" width="263" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.13832947609999999" green="0.2337904274" blue="0.32578486200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDX-s4-3Oj">
+                                        <rect key="frame" x="38" y="75" width="224" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgO-sR-Xdw">
+                                        <rect key="frame" x="131" y="330" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <segue destination="KWY-4O-XLM" kind="unwind" unwindAction="unwindCancel:" id="rlI-9d-bwW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="modalUIView" destination="CfT-VK-bSh" id="VtU-7R-8gZ"/>
+                        <outlet property="receiptImageView" destination="uDX-s4-3Oj" id="lzj-lo-Ga2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awC-6H-GOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KWY-4O-XLM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3592.8000000000002" y="1201.3493253373315"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="IEf-OY-RcD">
             <objects>
@@ -755,6 +820,6 @@
         <image name="camera-2" width="33" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Und-Sw-uTM"/>
+        <segue reference="SkW-XI-AUo"/>
     </inferredMetricsTieBreakers>
 </document>
